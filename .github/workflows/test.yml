@@ -30,7 +30,7 @@ jobs:
         with:
           name: build
           path: build
-
+      - run: chmod +x ./build/src/calculator
       - run: ./build/src/calculator add 10 5
 
   Test_sub:
@@ -42,7 +42,7 @@ jobs:
         with:
           name: build
           path: build
-
+      - run: chmod +x ./build/src/calculator
       - run: ./build/src/calculator sub 10 5
 
   Test_mul:
@@ -54,7 +54,7 @@ jobs:
         with:
           name: build
           path: build
-
+      - run: chmod +x ./build/src/calculator
       - run: ./build/src/calculator mul 5 5
 
   Test_div:
@@ -66,7 +66,7 @@ jobs:
         with:
           name: build
           path: build
-
+      - run: chmod +x ./build/src/calculator
       - run: ./build/src/calculator div 10 2
 
   Test_car:
@@ -78,7 +78,7 @@ jobs:
         with:
           name: build
           path: build
-
+      - run: chmod +x ./build/src/calculator
       - run: ./build/src/calculator car 5
 
   Deploy:
